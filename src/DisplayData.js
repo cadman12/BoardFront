@@ -42,7 +42,7 @@ const DataDisplay = () => {
             searchOption = '?' + selectedOption + "=" + searchText;
         }
 //        const response = await fetch('http://localhost:8080/board' + searchOption);
-        const response = await fetch('http://cadman12.iptimedisk.org:8080/board' + searchOption);
+        const response = await fetch('http://geodbipdisk.iptime.org:8080/board' + searchOption);
         const {jsondata} = await response.json();
         setData(jsondata);
     } catch (error) {
