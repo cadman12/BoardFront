@@ -43,7 +43,7 @@ const DataDisplay = () => {
         }
         const response = await fetch('http://localhost:8080/board' + searchOption);
 //        const response = await fetch('http://cadman12.iptimedisk.org:8080/board' + searchOption);
-        const {key, jsondata} = await response.json();
+        const {jsondata} = await response.json();
         setData(jsondata);
     } catch (error) {
         console.error('Error fetching Data:', error);
